@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factuurbedrag-calculator — ZZP Rekentools</title>
+  <meta name="description" content="Bereken een factuurbedrag op basis van uren, uurtarief, extra kosten en BTW-tarief.">
+  <link rel="stylesheet" href="style.css">
+  <script src="factuur.js" defer></script>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="index.html">ZZP Rekentools</a><nav><a href="btw-calculator.html">BTW-calculator</a><a href="uurtarief-calculator.html">Uurtarief</a><a href="kor-calculator.html">KOR-check</a><a href="factuur-calculator.html">Factuur</a><a href="over.html">Over</a></nav></header>
+  <main class="wrap narrow">
+    <p class="eyebrow">Rekenhulp</p><h1>Factuurbedrag-calculator</h1><p>Bereken het bedrag op basis van uren, uurtarief en eventuele extra kosten.</p>
+    <form id="invoice-form" class="panel">
+      <label for="hours">Aantal uren</label><input id="hours" name="hours" type="number" min="0" step="0.01" required>
+      <label for="rate">Uurtarief exclusief BTW (€)</label><input id="rate" name="rate" type="number" min="0" step="0.01" required>
+      <label for="extras">Extra kosten exclusief BTW (€), optioneel</label><input id="extras" name="extras" type="number" min="0" step="0.01" value="0">
+      <label for="vat-rate">BTW-tarief</label><select id="vat-rate" name="vat-rate"><option value="21">21%</option><option value="9">9%</option><option value="0">0%</option></select>
+      <button type="submit">Bereken factuurbedrag</button>
+      <p id="invoice-result" class="result" aria-live="polite">Vul de gegevens in en bereken.</p>
+    </form>
+    <aside class="placeholder"><strong>ZZP urenregistratie + BTW-overzicht (Excel)</strong><p><a href="https://planandpennystudio.etsy.com/nl/listing/4621038016/zzp-urenregistratie-btw-overzicht-excel">Bekijk de Etsy-download</a></p></aside>
+  </main><footer class="wrap"><a href="over.html">Over en disclaimer</a></footer>
+</body>
+</html>
