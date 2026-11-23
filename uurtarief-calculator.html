@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uurtarief-calculator — ZZP Rekentools</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="uurtarief.js" defer></script>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="index.html">ZZP Rekentools</a><nav><a href="btw-calculator.html">BTW-calculator</a><a href="uurtarief-calculator.html">Uurtarief</a><a href="over.html">Over</a></nav></header>
+  <main class="wrap narrow">
+    <p class="eyebrow">Indicatie op basis van je eigen invoer</p><h1>Uurtarief-calculator</h1><p>Vul je gewenste jaarlijkse netto-inkomen, bedrijfskosten, factureerbare uren en buffer in.</p>
+    <form id="rate-form" class="panel">
+      <label for="net">Gewenst jaarlijks netto-inkomen (€)</label><input id="net" type="number" min="0" step="100" value="36000" required>
+      <label for="costs">Jaarlijkse bedrijfskosten (€)</label><input id="costs" type="number" min="0" step="100" value="6000" required>
+      <label for="hours">Factureerbare uren per week</label><input id="hours" type="number" min="0.1" max="168" step="0.5" value="24" required>
+      <label for="weeks">Weken vrij per jaar</label><input id="weeks" type="number" min="0" max="52" step="1" value="5" required>
+      <label for="buffer">Buffer voor belasting/pensioen (%)</label><input id="buffer" type="number" min="0" step="1" value="30" required>
+      <button type="submit">Bereken indicatie</button>
+      <div class="assumptions"><strong>Aannames in deze eenvoudige berekening</strong><ul><li>Beschikbare factureerbare uren = uren per week × (52 − weken vrij).</li><li>De buffer is een percentage boven op gewenst netto-inkomen plus kosten.</li><li>Geen belastingtarieven, aftrekposten, BTW of andere inkomsten worden berekend.</li><li>Bedrag is per factureerbaar uur, exclusief BTW.</li></ul></div>
+      <p id="rate-result" class="result" aria-live="polite">Indicatief, geen belastingadvies. Vul de velden in en bereken.</p>
+    </form>
+    <aside class="placeholder"><strong>Toekomstige Etsy-download</strong><p><a href="#etsy-link-todo">ZZP BTW-tracker (Excel)</a> — link nog in te vullen.</p></aside>
+    <aside class="placeholder"><strong>Affiliate-link</strong><p><a href="#affiliate-todo">Bekijk een aanbevolen dienst</a> — link en eventuele toelichting nog in te vullen.</p></aside>
+  </main><footer class="wrap"><a href="over.html">Over en disclaimer</a></footer>
+</body>
+</html>
