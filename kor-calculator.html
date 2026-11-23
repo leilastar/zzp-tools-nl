@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KOR-check voor zzp'ers — ZZP Rekentools</title>
+  <meta name="description" content="Controleer of je verwachte jaaromzet onder de grens van € 20.000 voor de KOR blijft.">
+  <link rel="stylesheet" href="style.css">
+  <script src="kor.js" defer></script>
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="index.html">ZZP Rekentools</a><nav><a href="btw-calculator.html">BTW-calculator</a><a href="uurtarief-calculator.html">Uurtarief</a><a href="kor-calculator.html">KOR-check</a><a href="factuur-calculator.html">Factuur</a><a href="over.html">Over</a></nav></header>
+  <main class="wrap narrow">
+    <p class="eyebrow">Rekenhulp</p><h1>KOR-check</h1><p>Vul je verwachte jaaromzet exclusief BTW in om te zien of die onder de grens van € 20.000 blijft.</p>
+    <form id="kor-form" class="panel">
+      <label for="revenue">Verwachte jaaromzet exclusief BTW (€)</label><input id="revenue" name="revenue" type="number" min="0" step="0.01" required>
+      <button type="submit">Controleer</button>
+      <p id="kor-result" class="result" aria-live="polite">Vul je verwachte jaaromzet in en controleer.</p>
+      <p>Dit is alleen een eenvoudige grenscheck. Controleer de actuele voorwaarden en regels bij de Belastingdienst.</p>
+    </form>
+    <aside class="placeholder"><strong>ZZP urenregistratie + BTW-overzicht (Excel)</strong><p><a href="https://planandpennystudio.etsy.com/nl/listing/4621038016/zzp-urenregistratie-btw-overzicht-excel">Bekijk de Etsy-download</a></p></aside>
+  </main><footer class="wrap"><a href="over.html">Over en disclaimer</a></footer>
+</body>
+</html>
